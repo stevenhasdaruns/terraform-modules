@@ -1,0 +1,49 @@
+# Module - <MODULE_NAME>
+
+- [Module - <MODULE_NAME>](#module---modulename)
+  - [Minimum Required Configuration](#minimum-required-configuration)
+  - [Initial Configuration](#initial-configuration)
+  - [Inputs and Outputs](#inputs-and-outputs)
+    - [Inputs](#inputs)
+    - [Outputs](#outputs)
+
+This module deploys ____.
+
+## Minimum Required Configuration
+
+Substitute the details below for your configuration.
+
+```terraform
+module "example" {
+    source    = "../relative/path/to/modules/example"
+    ami       = "ami-from-your-region"
+    name      = "example"
+    key_name  = "existing-key-name-in-your-account"
+    subnet_id = "subnet-XXXXXXXX"
+    vpc_cidr  = "172.21.0.0/16"
+}
+```
+
+## Initial Configuration
+
+Before deploying this module, consider xyz.
+
+## Inputs and Outputs
+
+Inputs and outputs are generated with [terraform-docs](https://github.com/segmentio/terraform-docs)
+
+```bash
+terraform-docs markdown table ./
+```
+
+### Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:-----:|
+| name | Name used for prefixing module resources | `string` | n/a | yes |
+
+### Outputs
+
+| Name | Description |
+|------|-------------|
+| name | Name of the resource |
